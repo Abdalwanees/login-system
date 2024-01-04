@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>smart login</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fontfamiy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="login">
+      <div
+        class="loginform d-flex align-items-center justify-content-center min-vh-100 bg-main position-relative"
+      >
+        <div class="navbar position-absolute top-0 w-100 bg-main d-none">
+          <div
+            class="container d-flex align-items-center justify-content-between"
+          >
+            <h1 class="text-info fw-semibold">SMART LOGIN</h1>
+            <button class="btn btn-outline-warning" id="logOut">Log Out</button>
+          </div>
+        </div>
+        <div class="logform w-50 rounded-3 px-5 py-3">
+          <div class="message">
+            <h3 id="logmessage" class="text-info fw-bold fs-5 text-center my-5 d-none">
+            </h3>
+          </div>
+          <div class="content">
+            <div class="header text-center text-info">
+              <h2 class="fw-bold pt-4">Smart Login System</h2>
+            </div>
+            <div class="input py-2">
+              <input
+                type="text"
+                class="form-control my-3 d-none"
+                placeholder="User Name"
+                id="UserName"
+              />
+              <input
+                type="text"
+                class="form-control my-3"
+                placeholder="Email"
+                id="Email"
+              />
+              <input
+                type="password"
+                class="form-control my-3"
+                placeholder="Password"
+                id="Password"
+              />
+              <p
+                id="InVaid"
+                class="text-center rounded-3 w-100 p-1 text-danger d-none"
+              >
+                <i class="fa-solid fa-circle-exclamation pe-3"></i>
+                <span id="InVaildValue"></span>
+              </p>
+              <button class="btn btn-outline-info w-100 mt-3" id="Login">
+                Login
+              </button>
+              <button
+                class="btn btn-outline-info w-100 mt-3 d-none"
+                id="SignUp"
+              >
+                Sign Up
+              </button>
+            </div>
+            <div class="text-center">
+              <p class="text-white p1">
+                Don’t have an account?
+                <span id="signUpLink" class="link">Sign Up</span>
+              </p>
+              <p class="text-white d-none p2">
+                You have an account?
+                <span id="signInLink" class="link">Sign in</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js-connection -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

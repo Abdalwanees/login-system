@@ -1,0 +1,19 @@
+:root{
+    --bg-mainColor:#24353f;
+}
+.bg-main{
+    background-color: var(--bg-mainColor);
+}
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+.logform{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navbar{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
